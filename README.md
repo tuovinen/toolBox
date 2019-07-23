@@ -7,3 +7,5 @@
 | NPS scripts  | VBA, Python, Powershell |   |
 | oldestEmails  | VBA | Small programs to help handling emails etc. |
 | Ratti  | VBA |   |
+| JSON_kaunistaja  | HTML, JS, CSS |   |
+| IP address_heroku  | Python |   |
