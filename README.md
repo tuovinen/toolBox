@@ -5,5 +5,5 @@
 | Program  | Language(s) | Description |
 |---|---|---|
 | NPS scripts  | VBA, Python, Powershell |   |
-| oldestEmails  | VBA |   |
+| oldestEmails  | VBA | Small programs to help handling emails etc. |
 | Ratti  | VBA |   |
