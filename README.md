@@ -1,1 +1,1 @@
-# toolBox
+*This repo contains few selected scripts and programs I use to help my daily work as a service supervisor. All code is written by me.*
