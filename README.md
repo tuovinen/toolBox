@@ -2,9 +2,9 @@
 
 *This repo contains few selected scripts and programs I use to help my daily work as a service supervisor. All code is written by me.*
 
-|Folder / Program 	| Language(s) 				| Description 	|
------------------------------------------------------------------
-|clearRepliedTag	| VBA						| placeholder	|
-|NPS scripts 		| VBA, Python, Powershell	| placeholder	|
-|oldestEmails		| VBA						| placeholder	|
-|Ratti				| VBA						| placeholder	|
+| Program  | Language(s) | Description |
+|---|---|---|
+| clearRepeliedTag  | VBA |   |
+| NPS scripts  | VBA, Python, Powershell |   |
+| oldestEmails  | VBA |   |
+| Ratti  | VBA |   |
