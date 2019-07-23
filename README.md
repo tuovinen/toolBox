@@ -4,7 +4,6 @@
 
 | Program  | Language(s) | Description |
 |---|---|---|
-| clearRepeliedTag  | VBA |   |
 | NPS scripts  | VBA, Python, Powershell |   |
 | oldestEmails  | VBA |   |
 | Ratti  | VBA |   |
