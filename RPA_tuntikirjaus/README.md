@@ -7,9 +7,7 @@ A simple RPA sample made with [Sikulix](https://http://sikulix.com/). The script
 <hr>
 
 Video of the script running (on Youtube):<br /><br />
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YrnS5G_oUS6Y
-" target="_blank"><img src="http://img.youtube.com/vi/rnS5G_oUS6Y/0.jpg" 
-alt="Video." width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?v=rnS5G_oUS6Y" target="_blank"><img src="http://img.youtube.com/vi/rnS5G_oUS6Y/0.jpg" alt="Video." width="240" height="180" border="10" /></a>
 
 <hr>
 
