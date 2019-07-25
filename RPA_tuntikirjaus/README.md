@@ -8,5 +8,6 @@ A simple RPA sample made with [Sikulix](https://http://sikulix.com/). The script
 
 Video of the script running (on Youtube): ![Video](https://youtu.be/rnS5G_oUS6Y)
 
-<br />A screenshot from Sikulix IDE:
+A screenshot from Sikulix IDE:
+
 <br />![Screenshot](https://github.com/tuovinen/toolBox/blob/master/RPA_tuntikirjaus/screenshot.jpg)
