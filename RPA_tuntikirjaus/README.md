@@ -6,7 +6,10 @@ A simple RPA sample made with [Sikulix](https://http://sikulix.com/). The script
 
 <hr>
 
-Video of the script running (on Youtube): ![Video](https://www.youtube.com/watch?v=rnS5G_oUS6Y)
+Video of the script running (on Youtube):<br />
+[![Video](http://img.youtube.com/vi/rnS5G_oUS6Y/0.jpg)](http://www.youtube.com/watch?v=rnS5G_oUS6Y)
+
+<hr>
 
 A screenshot from Sikulix IDE:
 
