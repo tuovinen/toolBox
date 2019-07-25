@@ -9,3 +9,4 @@
 | Ratti  | VBA |   |
 | JSON_kaunistaja  | HTML, JS, CSS |   |
 | IP address_heroku  | Python |   |
+| RPA_tuntikirjaus  | Python, Sikulix | |
