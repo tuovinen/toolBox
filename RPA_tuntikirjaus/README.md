@@ -6,7 +6,7 @@ A simple RPA sample made with [Sikulix](https://http://sikulix.com/). The script
 
 <hr>
 
-Video of the script running (on Youtube): ![Video](https://youtu.be/rnS5G_oUS6Y)
+Video of the script running (on Youtube): ![Video](https://www.youtube.com/watch?v=rnS5G_oUS6Y)
 
 A screenshot from Sikulix IDE:
 
