@@ -4,9 +4,10 @@
 
 | Program  | Language(s) | Description |
 |---|---|---|
-| NPS scripts  | VBA, Python, Powershell |   |
-| oldestEmails  | VBA | Small programs to help handling emails etc. |
-| Ratti  | VBA |   |
-| JSON_kaunistaja  | HTML, JS, CSS |   |
 | IP address_heroku  | Python |   |
+| JSON_kaunistaja  | HTML, JS, CSS |   |
+| NPS scripts  | VBA, Python, Powershell |   |
+| Outlook helpers  | VBA | Small programs to help handling emails etc. |
 | RPA_tuntikirjaus  | Python, Sikulix | A simple RPA-ish script made with Sikulix |
+| Ratti  | VBA |   |
+
