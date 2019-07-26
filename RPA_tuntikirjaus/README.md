@@ -1,8 +1,10 @@
+<h1>RPA application - automating time tracking by Sikulix and JPython</h1>
+
 A simple RPA sample made with [Sikulix](https://http://sikulix.com/). Demonstrating the RPA use case to use a company's time tracking application. For demonstrating purposes the actual time tracking application has been replaced by a quick mockup HTML application.
 
 The script does the following:
 
-1. Uses Python's subprocess module to get Windows logon time (CMD command 'quser')
+1. Uses JPython's subprocess module to get Windows logon time (CMD command 'quser')
 2. Open Firefox and browses to a time tracking mockup web app
 3. Inserts the login date and time and current time and saves the entry
 

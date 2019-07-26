@@ -1,0 +1,163 @@
+<!-- anssi.tuovinen@gmail.fi -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Gimme some pretty JSON please!</title>
+		<script>
+			function prettify() {
+				try {
+					document.getElementById("output").innerHTML = "";
+					var jsoninput = document.getElementById("jsoninput").value;
+					var jsonoutput = JSON.stringify(JSON.parse(jsoninput), null, 2);
+					document.getElementById("output").innerHTML = jsonoutput;
+				}
+				catch(err) {
+					//document.getElementById("output").innerHTML = err.message;
+					document.getElementById("output").innerHTML = "Tarkista JSON...";
+				}
+			}
+
+			function selecttext() {
+				var range = document.createRange();
+				var selection = window.getSelection();
+				range.selectNodeContents(document.getElementById("output"));
+				selection.removeAllRanges();
+				selection.addRange(range);
+			}
+
+			function todefault() {
+				var default_input = '{"testi1":"testiarvo","testi2":"testiarvo","testi3":"testiarvo","testi4":"testiarvo","testi5":"testiarvo","testi6":"testiarvo","testi7":"testiarvo","testi8":"testiarvo","testi9":"testiarvo","testi10":"testiarvo"}';
+				document.getElementById("jsoninput").value = default_input;
+				prettify();
+			}
+		</script>
+		<style>
+
+			body {
+				background-color: #7c808e;
+				margin: 0 !important;
+				padding: 0 !important;
+			}
+
+			#banner {
+				width: 1000px;
+				height: 30px;
+				margin: auto;
+				text-align: center;
+				vertical-align: middle;
+				line-height: 30px;
+				background-color: #fffcb2;
+				font-family: Arial;
+				font-size: 12px;
+				color: #474747;
+				border-bottom-left-radius: 7px;
+				border-bottom-right-radius: 7px;
+				
+			}
+
+			.container {
+				margin-top: 50px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: auto;
+				width: 1000px;
+			}
+
+			textarea, p {
+				box-sizing: border-box;
+				display: block;
+				width: 100%;
+				padding: 10px;
+				margin-bottom: auto;
+				margin-top: auto;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			p {
+				overflow: auto;
+				overflow-y: hidden;
+			}
+
+			#jsoninput {
+				border: none;
+				resize: none;
+				background: #4a5060;
+				color: white;
+			}
+
+			#output {
+				height: 100%;
+				background: #4a5060;
+				color: white;
+			}
+
+			pre {
+				margin: auto;
+			}
+
+			button {
+				display: block;
+				border: none;
+				text-align: center;
+
+				width: 1000px;
+				margin-left: auto;
+				margin-right: auto;
+
+				color: white;
+				height: 40px;
+				padding: 10px;
+
+				transition: 0.3s;
+				opacity: 0.3;
+			}
+
+			button:hover {
+				opacity: 1;
+			}
+
+			.label {
+				background-color: silver;
+				text-align: center;
+				font-size: 12px;
+				color: black;
+				margin-bottom: 0;
+				font-family: Arial;
+				border-top-left-radius: 7px;
+				border-top-right-radius: 7px;
+				overflow: hidden;
+			}
+
+			#r, #sa {
+				border-bottom-left-radius: 7px;
+				border-bottom-right-radius: 7px;
+			}
+
+			#r {
+				background-color: red;
+			}
+
+			#sa {
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body onload="todefault();">
+
+		<div id="banner">JSON-kaunistaja &#169 Tuovinen 2019</div>
+
+		<div class="container">
+			<p class="label">UGLY JSON INPUT</p>
+			<textarea onkeyup="prettify();" id="jsoninput" rows="10" cols="">Oh please allow Javascript!</textarea>
+			<button id="r" onclick="todefault();">REFRESH</button>
+
+			<br /><br /><br />
+
+			<p class="label">PRETTY JSON OUTPUT</p>
+			<pre><p id="output"></p></pre>
+			<button id="sa" onclick="selecttext();">SELECT ALL</button>
+		</div>
+	</body>
+</html>
