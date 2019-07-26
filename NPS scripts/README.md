@@ -1,6 +1,6 @@
 <h1>NPS Scripts</h1>
 
-A company needs to contact new customers and send Net Promoter Score (NPS) survey. For this purpose we need to gather customer details from order emails.
+A company needs to contact new customers for Net Promoter Score (NPS) survey. For this purpose we need to get customer and admin user details from order emails.
 
 <b>mails2files.vba</b>
 Takes all selected emails and saves them as text files with an order number as a filename.
