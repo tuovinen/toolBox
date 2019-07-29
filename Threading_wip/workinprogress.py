@@ -2,28 +2,47 @@ import logging
 import threading
 import time
 import random
+import requests
 
-def thread_function(name):
-	logging.info("Starting thread {0}.".format(name))
-	time.sleep(random.randint(1,5))
-	logging.info("Thread {0} ready.".format(name))
+def thread_function(url):
+	try:
+		logging.info("Pinging: {0}.".format(url))
+		r = requests.get(url)
+		ping = r.elapsed.microseconds/1000
+		logging.info("Response from {0} received: {1} {2}".format(url, r.status_code, ping))
+	except requests.exceptions.RequestException as e:
+		logging.info("Response from {0} received: {1} {2}".format(url, "N/A", "N/A"))
 
-format = "%(asctime)s %(filename)s %(thread)d: %(message)s"
-logging.basicConfig(format=format, level=logging.INFO, datefmt="%H:%M:%S")
 
-threads = []
+def get_urls():
+	with open('targets.txt', 'r') as f:
+		urls = f.readlines()
+		urls = [line.strip('\n') for line in urls]
+		logging.info("URLs found ({0}):{1}".format(len(urls), urls))
+		return urls
 
-for i in range(0,5):
-	logging.info("Creating thread: " + str(i))
-	x = threading.Thread(target=thread_function, args=str(i))
-	x.start()
-	threads.append(x)
+def main():
 
-logging.info("WAITING...")
+	logging.info("STARTING...")
 
-for i in threads:
-	i.join()
+	urls = get_urls()
+	threads = []
 
-logging.info("DONE")
+	for url in urls:
+		x = threading.Thread(target=thread_function, args=(str(url),), daemon=True)
+		x.start()
+		threads.append(x)
 
+	logging.info("WAITING...")
+
+	for i in threads:
+		i.join()
+
+	logging.info("DONE")
+
+
+if __name__ == '__main__':
+	format = "%(asctime)s %(filename)s %(thread)d: %(message)s"
+	logging.basicConfig(format=format, level=logging.INFO, datefmt="%H:%M:%S")
+	main()
 
