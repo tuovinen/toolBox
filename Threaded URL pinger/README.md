@@ -1,0 +1,1 @@
+Pings URLs listed in targets.txt. For further development in future (GUI) the script uses threading.

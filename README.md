@@ -10,5 +10,6 @@
 | NPS_scripts  | VBA, Python, Powershell | Scripts to help get desired data from order emails. |
 | Outlook_helpers  | VBA | Small programs to help handling emails etc. |
 | <b>RPA_tuntikirjaus<b>  | Python, Sikulix | A simple RPA-ish script made with Sikulix. |
+| Threaded URL pinger  | Python | Pings URLs listed in targets.txt. For further development in future (GUI) the script uses threading. |
 
 
