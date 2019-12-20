@@ -9,7 +9,8 @@
 | JSON_kaunistaja  | HTML, JS, CSS | Makes compact and minimized JSON easier for human to read. |
 | NPS_scripts  | VBA, Python, Powershell | Scripts to help get desired data from order emails. |
 | Outlook_helpers  | VBA | Small programs to help handling emails etc. |
-| <b>RPA_tuntikirjaus<b>  | Python, Sikulix | A simple RPA-ish script made with Sikulix. |
+| RPA_tuntikirjaus  | Python, Sikulix | A simple RPA-ish script made with Sikulix. |
 | Threaded URL pinger  | Python | Pings URLs listed in targets.txt. For further development in future (GUI) the script uses threading. |
+| SMS_AT_Commands | Python | A simple CLI tool to send SMSs from PC via phone plugged in USB port. Uses AT commands via serial connection. |
 
 
